@@ -1,11 +1,5 @@
 import styled from 'styled-components';
-const getBcgColor = ({ completed }) => {
-  if (completed) {
-    return '#1976d2';
-  } else {
-    return '#e2e5e8';
-  }
-};
+
 export const StyledButton = styled.button`
   display: inline-flex;
   padding: 8px 12px;
@@ -13,8 +7,8 @@ export const StyledButton = styled.button`
   border: none;
   font: inherit;
   cursor: pointer;
-  background-color: ${getBcgColor};
-  color: inherit;
+  background-color: ${props => (props.selected ? '#1976d2' : '#e2e5e8')};
+  color: ${props => (props.selected ? '#fff' : 'inherit')};
   &:hover {
     background-color: #1976d2;
     color: #fff;

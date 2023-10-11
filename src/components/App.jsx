@@ -6,12 +6,12 @@ import { TaskForm } from './TaskForm/TaskForm';
 import { TaskList } from './TaskList/TaskList';
 
 export const App = () => {
-  const [tasks, _] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   return (
     <Layout>
       <AppBar />
-      <TaskForm />
+      <TaskForm onAdd={setTasks} />
       {tasks && <TaskList tasks={tasks} />}
       <GlobalStyle />
     </Layout>

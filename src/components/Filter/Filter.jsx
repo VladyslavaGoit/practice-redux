@@ -7,7 +7,7 @@ export const Filter = () => {
       <Title>Filter by status</Title>
       <ButtonsList>
         <li>
-          <Button>All</Button>
+          <Button selected={true}>All</Button>
         </li>
         <li>
           <Button>Active</Button>
