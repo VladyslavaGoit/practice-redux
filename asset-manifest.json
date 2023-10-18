@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/practice-redux/static/css/main.b5320759.css",
-    "main.js": "/practice-redux/static/js/main.fbfda97b.js",
+    "main.js": "/practice-redux/static/js/main.cba01287.js",
     "index.html": "/practice-redux/index.html",
     "main.b5320759.css.map": "/practice-redux/static/css/main.b5320759.css.map",
-    "main.fbfda97b.js.map": "/practice-redux/static/js/main.fbfda97b.js.map"
+    "main.cba01287.js.map": "/practice-redux/static/js/main.cba01287.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.fbfda97b.js"
+    "static/js/main.cba01287.js"
   ]
 }
