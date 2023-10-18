@@ -2,6 +2,7 @@ import { TaskItem } from 'components/TaskItem/TaskItem';
 import { useSelector } from 'react-redux';
 import { filterStatus } from 'redux/constants';
 import { getFilterStatus, getTasks } from 'redux/selectors';
+import { Item } from './TaskList.styled';
 
 const getVisibleTasks = (tasks, filter) => {
   switch (filter) {
@@ -21,9 +22,9 @@ export const TaskList = () => {
   return (
     <ul>
       {visibleTasks.map(task => (
-        <li key={task.id}>
+        <Item key={task.id}>
           <TaskItem task={task} />
-        </li>
+        </Item>
       ))}
     </ul>
   );
