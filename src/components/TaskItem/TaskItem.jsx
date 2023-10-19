@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteTask, toggleCompleted } from 'redux/actions';
+import { deleteTask, toggleCompleted } from 'redux/tasksSlice';
 import { CheckBox, Text, Wrapper } from './TaskItem.styled';
 
 export const TaskItem = ({ task: { id, completed, text } }) => {
